@@ -55,7 +55,7 @@ class _GameScreenState extends State<GameScreen> {
           ),
           Positioned(
             top: 60,
-            left: 75,
+            left: 60,
             child: Column(
               children: [
                 // buildTarget(
@@ -75,7 +75,7 @@ class _GameScreenState extends State<GameScreen> {
                 // ),
                 SizedBox(
                   height: 250,
-                  width: 450,
+                  width: 500,
                   child: GridView.builder(
                       itemCount: all.length,
                       gridDelegate:
@@ -86,7 +86,7 @@ class _GameScreenState extends State<GameScreen> {
                         var data = [all[index]];
 
                         return Container(
-                          margin: EdgeInsets.all(5),
+                          margin: EdgeInsets.all(10),
                           child: buildTarget(
                             context,
                             // text: all[index]
