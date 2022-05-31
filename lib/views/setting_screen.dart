@@ -20,147 +20,58 @@ class _SettingScreenState extends State<SettingScreen> {
           RotatedBox(
             quarterTurns: 1,
             child: Image.asset(
-              "assets/images/main.png",
+              "assets/icons/v.png",
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
               alignment: Alignment.center,
             ),
           ),
-          InkWell(
-            onTap: (){
-              Get.toNamed(AppRoutes.SETTINGSCREEN);
-            },
-            child: const Positioned(
-              top: 40,
-              right: 30,
-              child: Icon(Icons.settings, size: 35,),
-            ),
-          ),
           Column(
             children: [
-              SizedBox(height: 100,),
+              const SizedBox(height: 60,),
+              const Text("Settings", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+              const SizedBox(height: 30,),
               Row( mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: const Image(
-                            image: AssetImage("assets/images/sample.png"),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
+                      const Image(
+                        image: AssetImage("assets/icons/timer.png"),
+                        height: 50,
                       ),
                       const SizedBox(height: 10),
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: const Image(
-                            image: AssetImage("assets/images/sample.png"),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: const Image(
-                            image: AssetImage("assets/images/sample.png"),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: const Image(
-                            image: AssetImage("assets/images/sample.png"),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: const Image(
-                            image: AssetImage("assets/images/sample.png"),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
+                      const Image(
+                        image: AssetImage("assets/icons/music.png"),
+                        height: 50,
                       ),
                       const SizedBox(height: 10),
                       InkWell(
                         onTap: (){
-                          Get.toNamed(AppRoutes.MORESCREEN);
+                          Get.toNamed(AppRoutes.SCORESSCREEN);
                         },
-                        child: Container(
-                          height: 80,
-                          width: 80,
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            border: Border.all(color: Colors.black, width: 0.5),
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                          child: const Center(child: Text("More", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)),
+                        child: const Image(
+                          image: AssetImage("assets/icons/score.png"),
+                          height: 50,
                         ),
                       ),
                     ],
                   ),
-                ],
-              ),
-              SizedBox(height: 25,),
-              InkWell(
-                onTap: (){
-                  Get.toNamed(AppRoutes.GAMESCREEN);
-                },
-                child: Container(
-                  height: 50,
-                  width: 140,
-                  decoration: BoxDecoration(
-                    color: Colors.lightGreenAccent,
-                    border: Border.all(color: Colors.black, width: 1),
-                    borderRadius: BorderRadius.circular(100),
+                  const SizedBox(width: 15,),
+                  Column(crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text("Timer On/Off", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+                      const SizedBox( height: 32,),
+                      const Text("Music On/Off", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+                      const SizedBox( height: 32,),
+                      InkWell(
+                          onTap: (){
+                            Get.toNamed(AppRoutes.SCORESSCREEN);
+                          },
+                          child: const Text("High Score", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),)),
+                    ],
                   ),
-                  child: const Center(child: Text("Play", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),)),
-                ),
+                ],
               ),
             ],
           ),

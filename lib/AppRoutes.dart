@@ -5,6 +5,7 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:zapps/views/home_screen.dart';
 import 'package:zapps/views/main_game_screen.dart';
 import 'package:zapps/views/more_screen.dart';
+import 'package:zapps/views/scores_screen.dart';
 import 'package:zapps/views/setting_screen.dart';
 
 class AppRoutes {
@@ -12,12 +13,18 @@ class AppRoutes {
   static const String MORESCREEN = "/morescreen";
   static const String GAMESCREEN = "/gamescreen";
   static const String SETTINGSCREEN = "/settingscreen";
+  static const String SCORESSCREEN = "/scoresscreen";
 
   static List<GetPage> routes = [
     GetPage(
         name: HOMESCREEN,
         page: () => HomeScreen(),
         transitionDuration: Duration(milliseconds: 100),
+        transition: Transition.cupertino),
+    GetPage(
+        name: SCORESSCREEN,
+        page: () => const ScoresScreen(),
+        transitionDuration: const Duration(milliseconds: 100),
         transition: Transition.cupertino),
     GetPage(
         name: SETTINGSCREEN,

@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Column(
             children: [
-              SizedBox(height: 100,),
+              const SizedBox(height: 70,),
               Row( mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
