@@ -6,15 +6,17 @@ class ScoresScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
-          Image.asset(
-            "assets/images/score-bg.png",
-            // fit: BoxFit.cover,
-            // height: double.infinity,
-            // width: double.infinity,
-            // alignment: Alignment.center,
-  
+          RotatedBox(
+            quarterTurns: 1,
+            child: Image.asset(
+              "assets/images/score-bg.png",
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.center,
+            ),
           ),
         ],
       ),
