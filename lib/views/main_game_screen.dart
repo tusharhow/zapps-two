@@ -28,174 +28,172 @@ int score = 0;
 class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Stack(
-          children: [
-            RotatedBox(
-              quarterTurns: 1,
-              child: Image.asset(
-                "assets/images/main.png",
-                fit: BoxFit.cover,
-                height: double.infinity,
-                width: double.infinity,
-                alignment: Alignment.center,
+    return Scaffold(
+      body: Stack(
+        children: [
+          RotatedBox(
+            quarterTurns: 1,
+            child: Image.asset(
+              "assets/images/main.png",
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.center,
+            ),
+          ),
+          Positioned(
+            top: 40,
+            right: 30,
+            child: Text(
+              "Score: $score",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               ),
             ),
-            Positioned(
-              top: 40,
-              right: 30,
-              child: Text(
-                "Score: $score",
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 60,
-              left: 60,
-              child: Column(
-                children: [
-                  // buildTarget(
-                  //   context,
-                  //   text: 'All',
-                  //   animals: all,
-                  //   acceptTypes: AnimalType.values,
-                  //   onAccept: (data) => setState(() {
-                  //     removeAll(data);
-                  //     all.add(data);
-                  //   }),
-                  // ),
-                  // Container(
-                  //   height: 210,
-                  //   width: 250,
-                  //   color: Colors.red,
-                  // ),
-                  SizedBox(
-                    height: 250,
-                    width: 500,
-                    child: GridView.builder(
-                        itemCount: all.length,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4,
-                        ),
-                        itemBuilder: (context, index) {
-                          var data = [all[index]];
+          ),
+          Positioned(
+            top: 60,
+            left: 60,
+            child: Column(
+              children: [
+                // buildTarget(
+                //   context,
+                //   text: 'All',
+                //   animals: all,
+                //   acceptTypes: AnimalType.values,
+                //   onAccept: (data) => setState(() {
+                //     removeAll(data);
+                //     all.add(data);
+                //   }),
+                // ),
+                // Container(
+                //   height: 210,
+                //   width: 250,
+                //   color: Colors.red,
+                // ),
+                SizedBox(
+                  height: 250,
+                  width: 500,
+                  child: GridView.builder(
+                      itemCount: all.length,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 4,
+                      ),
+                      itemBuilder: (context, index) {
+                        var data = [all[index]];
 
-                          return Container(
-                            margin: EdgeInsets.all(10),
-                            child: buildTarget(
-                              context,
-                              // text: all[index]
-                              //     .type
-                              //     .toString()
-                              //     .replaceAll('AnimalType.', ''),
-                              text: '',
-                              animals: data,
-                              acceptTypes: AnimalType.values,
-                              onAccept: (data) => setState(() {
-                                removeAll(data);
-                                all.add(data);
-                              }),
-                            ),
-                          );
-                        }),
-                  )
-                ],
-              ),
+                        return Container(
+                          margin: EdgeInsets.all(10),
+                          child: buildTarget(
+                            context,
+                            // text: all[index]
+                            //     .type
+                            //     .toString()
+                            //     .replaceAll('AnimalType.', ''),
+                            text: '',
+                            animals: data,
+                            acceptTypes: AnimalType.values,
+                            onAccept: (data) => setState(() {
+                              removeAll(data);
+                              all.add(data);
+                            }),
+                          ),
+                        );
+                      }),
+                )
+              ],
             ),
-            Positioned(
-              left: 70,
-              top: 215,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      buildTarget(
-                        context,
-                        text: '1',
-                        animals: one,
-                        acceptTypes: [AnimalType.one],
-                        onAccept: (data) => setState(() {
-                          one.remove(data);
-                          one.add(data);
-                        }),
-                      ),
-                      const SizedBox(width: 20),
-                      buildTarget(
-                        context,
-                        text: '2',
-                        animals: two,
-                        acceptTypes: [AnimalType.two],
-                        onAccept: (data) => setState(() {
-                          removeAll(data);
-                          two.add(data);
-                        }),
-                      ),
-                      const SizedBox(width: 20),
-                      buildTarget(
-                        context,
-                        text: '3',
-                        animals: three,
-                        acceptTypes: [AnimalType.three],
-                        onAccept: (data) => setState(() {
-                          removeAll(data);
-                          three.add(data);
-                        }),
-                      ),
-                      const SizedBox(width: 20),
-                      buildTarget(
-                        context,
-                        text: '4',
-                        animals: four,
-                        acceptTypes: [AnimalType.four],
-                        onAccept: (data) => setState(() {
-                          removeAll(data);
-                          four.add(data);
-                        }),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+          ),
+          Positioned(
+            left: 70,
+            top: 215,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    buildTarget(
+                      context,
+                      text: '1',
+                      animals: one,
+                      acceptTypes: [AnimalType.one],
+                      onAccept: (data) => setState(() {
+                        one.remove(data);
+                        one.add(data);
+                      }),
+                    ),
+                    const SizedBox(width: 20),
+                    buildTarget(
+                      context,
+                      text: '2',
+                      animals: two,
+                      acceptTypes: [AnimalType.two],
+                      onAccept: (data) => setState(() {
+                        removeAll(data);
+                        two.add(data);
+                      }),
+                    ),
+                    const SizedBox(width: 20),
+                    buildTarget(
+                      context,
+                      text: '3',
+                      animals: three,
+                      acceptTypes: [AnimalType.three],
+                      onAccept: (data) => setState(() {
+                        removeAll(data);
+                        three.add(data);
+                      }),
+                    ),
+                    const SizedBox(width: 20),
+                    buildTarget(
+                      context,
+                      text: '4',
+                      animals: four,
+                      acceptTypes: [AnimalType.four],
+                      onAccept: (data) => setState(() {
+                        removeAll(data);
+                        four.add(data);
+                      }),
+                    ),
+                  ],
+                ),
+              ],
             ),
-            // Positioned(
-            //   left: 70,
-            //   top: 550,
-            //   child: Row(
-            //     children: [
-            //       buildTarget(
-            //         context,
-            //         text: '3',
-            //         animals: three,
-            //         acceptTypes: [AnimalType.three],
-            //         onAccept: (data) => setState(() {
-            //           removeAll(data);
-            //           three.add(data);
-            //         }),
-            //       ),
-            //       const SizedBox(width: 20),
-            //       buildTarget(
-            //         context,
-            //         text: '4',
-            //         animals: four,
-            //         acceptTypes: [AnimalType.four],
-            //         onAccept: (data) => setState(() {
-            //           removeAll(data);
-            //           four.add(data);
-            //         }),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-          ],
-        ),
+          ),
+          // Positioned(
+          //   left: 70,
+          //   top: 550,
+          //   child: Row(
+          //     children: [
+          //       buildTarget(
+          //         context,
+          //         text: '3',
+          //         animals: three,
+          //         acceptTypes: [AnimalType.three],
+          //         onAccept: (data) => setState(() {
+          //           removeAll(data);
+          //           three.add(data);
+          //         }),
+          //       ),
+          //       const SizedBox(width: 20),
+          //       buildTarget(
+          //         context,
+          //         text: '4',
+          //         animals: four,
+          //         acceptTypes: [AnimalType.four],
+          //         onAccept: (data) => setState(() {
+          //           removeAll(data);
+          //           four.add(data);
+          //         }),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+        ],
       ),
     );
   }

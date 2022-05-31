@@ -5,13 +5,13 @@ import 'package:get/get_core/src/get_main.dart';
 import '../AppRoutes.dart';
 import 'main_game_screen.dart';
 
-class HomeScreen extends StatefulWidget {
+class MoreScreen extends StatefulWidget {
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<MoreScreen> createState() => _MoreScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,15 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
               alignment: Alignment.center,
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 40,
             right: 30,
-            child: InkWell(
-              onTap: (){
-                Get.toNamed(AppRoutes.SETTINGSCREEN);
-              },
-              child: Icon(Icons.settings, size: 35,),
-            ),
+            child: Icon(Icons.settings, size: 30,),
           ),
           Column(
             children: [
@@ -127,20 +122,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      InkWell(
-                        onTap: (){
-                          Get.toNamed(AppRoutes.MORESCREEN);
-                        },
-                        child: Container(
-                          height: 80,
-                          width: 80,
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreen,
-                            border: Border.all(color: Colors.black, width: 0.5),
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                          child: const Center(child: Text("More", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)),
+                      Container(
+                        height: 80,
+                        width: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.lightGreen,
+                          border: Border.all(color: Colors.black, width: 0.5),
+                          borderRadius: BorderRadius.circular(100),
                         ),
+                        child: const Center(child: Text("More", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)),
                       ),
                     ],
                   ),

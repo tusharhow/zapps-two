@@ -5,13 +5,13 @@ import 'package:get/get_core/src/get_main.dart';
 import '../AppRoutes.dart';
 import 'main_game_screen.dart';
 
-class HomeScreen extends StatefulWidget {
+class SettingScreen extends StatefulWidget {
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<SettingScreen> createState() => _SettingScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,13 +27,13 @@ class _HomeScreenState extends State<HomeScreen> {
               alignment: Alignment.center,
             ),
           ),
-          Positioned(
-            top: 40,
-            right: 30,
-            child: InkWell(
-              onTap: (){
-                Get.toNamed(AppRoutes.SETTINGSCREEN);
-              },
+          InkWell(
+            onTap: (){
+              Get.toNamed(AppRoutes.SETTINGSCREEN);
+            },
+            child: const Positioned(
+              top: 40,
+              right: 30,
               child: Icon(Icons.settings, size: 35,),
             ),
           ),
