@@ -27,21 +27,16 @@ class _MoreScreenState extends State<MoreScreen> {
               alignment: Alignment.center,
             ),
           ),
-          const Positioned(
-            top: 40,
-            right: 30,
-            child: Icon(Icons.settings, size: 30,),
-          ),
           Column(
             children: [
-              SizedBox(height: 100,),
+              SizedBox(height: 60,),
               Row( mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                         ),
@@ -55,8 +50,38 @@ class _MoreScreenState extends State<MoreScreen> {
                       ),
                       const SizedBox(height: 10),
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                         ),
@@ -70,12 +95,12 @@ class _MoreScreenState extends State<MoreScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   Column(
                     children: [
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                         ),
@@ -89,8 +114,38 @@ class _MoreScreenState extends State<MoreScreen> {
                       ),
                       const SizedBox(height: 10),
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                         ),
@@ -104,12 +159,12 @@ class _MoreScreenState extends State<MoreScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10,),
+                  const SizedBox(width: 10,),
                   Column(
                     children: [
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                         ),
@@ -123,14 +178,240 @@ class _MoreScreenState extends State<MoreScreen> {
                       ),
                       const SizedBox(height: 10),
                       Container(
-                        height: 80,
-                        width: 80,
+                        height: 50,
+                        width: 50,
                         decoration: BoxDecoration(
-                          color: Colors.lightGreen,
-                          border: Border.all(color: Colors.black, width: 0.5),
                           borderRadius: BorderRadius.circular(100),
                         ),
-                        child: const Center(child: Text("More", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 10,),
+                  Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 10,),
+                  Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 10,),
+                  Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: AssetImage("assets/images/sample.png"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -139,17 +420,17 @@ class _MoreScreenState extends State<MoreScreen> {
               SizedBox(height: 25,),
               InkWell(
                 onTap: (){
-                  Get.toNamed(AppRoutes.GAMESCREEN);
+                  // Get.toNamed(AppRoutes.GAMESCREEN);
                 },
                 child: Container(
-                  height: 50,
-                  width: 140,
+                  height: 35,
+                  width: 160,
                   decoration: BoxDecoration(
                     color: Colors.lightGreenAccent,
                     border: Border.all(color: Colors.black, width: 1),
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  child: const Center(child: Text("Play", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),)),
+                  child: const Center(child: Text("Unlock All Levels", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)),
                 ),
               ),
             ],
