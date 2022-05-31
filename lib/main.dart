@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:zapps/views/home_screen.dart';
 import 'package:zapps/views/settings_page.dart';
 import 'views/main_game_screen.dart';
 import 'views/scores_screen.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const GameScreen(),
+      home: HomeScreen(),
     );
   }
 }
