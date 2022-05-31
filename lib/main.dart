@@ -4,6 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:zapps/views/home_screen.dart';
 import 'package:zapps/views/settings_page.dart';
 import 'AppRoutes.dart';
+import 'views/in_app_purchase.dart';
 import 'views/main_game_screen.dart';
 import 'views/scores_screen.dart';
 
@@ -27,9 +28,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: AppRoutes.HOMESCREEN,
-      getPages: AppRoutes.routes,
+      // initialRoute: AppRoutes.HOMESCREEN,
+      // getPages: AppRoutes.routes,
       debugShowCheckedModeBanner: false,
+      home: InAppPurchaseScreen(),
     );
   }
 }
